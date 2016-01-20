@@ -1,0 +1,193 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+p {
+    @include font(copy);
+}
+
+// Fixed Outer on Mobile when Nav/Sub-Nav is open
+
+body._fixed {
+    position: fixed;
+}
+
+
+a {
+    color: $greenLink;
+
+    &,
+    &:active,
+    &:focus > * {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+
+
+    &:active,
+    &:focus,
+    &:visited { color: $greenLink; }
+
+}
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float:right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+
+
+// html5 reset
+article, aside, footer, header, main, nav, section, figure {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+input {
+    border: 0;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none; //ios fix
+}
+
+// Layout utilities!
+.wrapper {
+	@include outer-container;
+
+    .main,
+    .rail {
+        @include span-columns(1 of 14);
+    }
+
+    .main {
+      width: get-span(9 of 14);
+    }
+
+    .rail {
+      width: get-span(3 of 14);
+    }
+}
+
+
+.page-block {
+    margin-top: gap(l); // also add top and bottom margin/padding
+    padding-bottom: gap(l);
+
+    &.-blue { // blue background
+        background-color: #eff3f7;
+    }
+}
+ 
+@include media($small) {
+    .wrapper {
+        @include outer-container;
+
+        .main,
+        .rail {
+            width: auto;
+            float: none;
+            margin-right: auto;
+        }
+
+        .rail {
+            clear: both;
+        }
+
+    }
+    .page-block {
+        margin-top: gap(m); // also add top and bottom margin/padding
+        padding-bottom: gap(m);
+    }
+}
+
+// Breakpoint indicator in pseudo-element (display none) on body, only readable via JS, instead of writing breakpoint class name to body tag via JS
+body:before {
+    display: none;
+    content: 'large';
+
+    @include media($medium){
+        content: 'medium';
+
+    }
+    @include media($small){
+        content: 'small'
+    }
+}
+
+
+// visually-hidden but accessible content
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.bot-border{
+    border-bottom:1px solid $lightBlueBorder;
+}
+// Breakpoint indicator in pseudo-element (display none) on body, only readable via JS, instead of writing breakpoint class name to body tag via JS
+body:before {
+    display: none;
+    content: 'large';
+
+    @include media($medium){
+        content: 'medium';
+
+    }
+    @include media($small){
+        content: 'small'
+    }
+}
+#map_canvas{
+    
+}
+#map_canvas img{max-width:none!important;background:none!important;}
+#map_canvas{
+    margin-top: gap(m);
+    min-height:400px;
+    min-width:300px; 
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+.thumbnails{
+    border:1px solid #000;
+    height:auto;
+    width:155px;
+}
+#infoWindow{min-width:120px;height:80px;line-height:1.2em;}
+// all-capsify text without altering the actual content
+@mixin all-caps {
+    text-transform: uppercase;
+}
+
+// or, use this utility class
+.-caps { @include all-caps; }
+
+
+// This is causing all kinds of bugs and should be removed, and then thoroughly QA'd.
+@viewport {
+    width: device-width;
+    zoom: 0.7;
+}

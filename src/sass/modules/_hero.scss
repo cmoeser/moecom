@@ -1,0 +1,50 @@
+﻿//hero 
+.hero-wrapper {
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    background-color: $blue-grey;
+    @include clearfix;
+    min-height:590px;
+}
+
+@include media($medium){
+    .wrapper,
+    .article-hero-wrapper {
+        @include fill-parent();
+    }
+}
+
+@include media($small){
+
+    .article-hero-wrapper {
+        padding: 0 $mobile-padding-left-right;
+    }
+
+}
+
+@media (max-width: 479px) {
+    .hero-wrapper {
+        background-image: url('../images/home-banner-sm.jpg');
+        min-height:283px;
+    }
+}
+@media (min-width:480px) and (max-width: 767px) {
+    .hero-wrapper {
+        background-image: url('../images/home-banner-md.jpg');
+        min-height:440px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1180px) {
+    .hero-wrapper {
+        background-image: url('../images/home-banner-md.jpg');
+        min-height:440px;
+    }
+}
+@media (min-width: 1181px) {
+    .hero-wrapper {
+        background-image: url('../images/home-banner-lg.jpg');
+    }
+}

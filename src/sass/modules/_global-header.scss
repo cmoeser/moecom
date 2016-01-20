@@ -1,0 +1,501 @@
+// Global Header Variables
+
+$desktop-padding: 70px;
+$tablet-padding: 5%;
+$desktop-max-width: 1230px + (2 * $desktop-padding);
+$tablet-max-width: inherit;
+$subNavColumnPadding:30px;
+$mainNavZIndex: 1000;
+$navHoverSpeed: 280ms;
+
+// mobile variables
+$menu-width: 74%;
+$menu-left-padding: 10%;
+
+$navHoverStartOpacity: 0.8;
+
+
+// Global Header, see _global_nav.scss for inherited global nav styles
+
+.global-header {
+	&.-no-bottom-border {
+		border-bottom: none;
+	}
+
+
+	// Top Blue Bar
+	.top-bar {
+		background: $top-bar-blue;
+		color: white;
+		position: relative;
+
+		a {
+			color: #fff;
+		}
+	}
+	.top-bar-inner {
+		margin: auto;
+		max-width: $desktop-max-width;
+		overflow: hidden;
+		padding: 12px $desktop-padding;
+	}
+
+	.cm-logo-icon img{
+          width:100%;
+          height:100%;
+	}
+
+	// Main Navigation menu
+	.main-nav-section {
+		max-width: $desktop-max-width;
+		padding: 0 $desktop-padding;
+		margin: auto;
+		background-color: #fff;
+
+
+		.location-signin {
+			display: none;
+		}
+	}
+	.main-nav-inner {
+		@include clearfix;
+	}
+	.cm-logo-icon {
+		display: block;
+		width:8em;
+		float: left;
+		font-size: 36px;
+		position: relative; //so main nav does not cover, link is clickable
+		z-index: 1;
+	}
+	.main-nav {
+		// no float left to preserve width
+		position: relative;
+
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+	.nav-group-left {
+		float: left;
+		padding-left: 20px;
+
+		.sub-nav { //positioning of sub-nav
+			left: 280px;
+		}
+	}
+
+	.nav-item {
+	    padding: 0 22px;
+	    a{
+	       color: $black-type;
+	    }
+
+		&._hover-open {
+			&>a:before {
+				opacity: 1;
+				visibility: visible;
+				transition: visibility 0s, opacity $navHoverSpeed;
+			}
+		}
+
+		&>a:before {
+ 
+		}
+		&.selected{		   
+		   a{
+		       cursor: default;
+		       color:$greyLink;
+		   }
+		}
+	}
+
+
+	// Sub Nav Section
+	.sub-nav {
+
+		.column {
+			width: percentage(1/3);
+			float: left;
+			padding: 0 $subNavColumnPadding;
+		}
+
+		.column-main-links {
+			float: right;
+
+			.sub-nav-item {
+				padding-left:(50px - $subNavColumnPadding);
+				padding-right: $subNavColumnPadding;
+			}
+		}
+		a:hover {
+			color: $black-type-hover;
+		}
+	}
+	.sub-nav-links {
+		@include clearfix;
+	}
+	.menu-toggle {
+		display: none;
+	}
+}
+@include media($medium){
+	.global-header {
+
+		.top-bar-inner,
+		.main-nav-section {
+			max-width: $tablet-max-width;
+			padding-left: $tablet-padding;
+			padding-right: $tablet-padding;
+
+		}
+		.top-bar {
+			.cm-logo-icon {
+				display: block;
+				transform: translateY(0.15em);
+			}
+			.location-signin {
+				line-height: 22px; // so it vertically centers in bar
+			}
+		}
+		.top-bar-inner {
+			padding-top: 19px;
+			padding-bottom: 19px;
+		}
+		.cm-logo-icon {
+			color: #fff;
+			font-size: 22px;
+			margin: 0;
+		}
+		.main-nav-section {
+			.cm-logo-icon {
+				display: none;
+			}
+		}
+		.main-nav {
+			padding: 0;
+		}
+		.nav-group-left {
+			padding-left: 0;
+
+			.sub-nav {
+				left: 0;
+			}
+
+			li:first-child {
+				padding-left: 0;
+			}
+		}
+		.nav-item {
+			padding: 0 14px;
+		}
+	}
+
+
+}
+
+@include media($small){
+
+	.global-header {
+		border-bottom: none;
+		overflow-x: hidden;
+
+		.ie9 & {
+			.top-bar-inner {
+				display: table;
+				width: 100%;
+			}
+
+			.menu-toggle,
+			.top-bar .cm-logo-icon {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.cm-logo-icon {
+				text-align: center;
+				font-size:46px;
+			}
+			.mobile-search {
+				text-align: right;
+			}
+		}
+
+		.top-bar {
+			.cm-logo-icon {
+				transition: opacity 250ms linear;
+			}
+		}
+
+		.top-bar-inner {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			padding: 0 20px 0;
+			height: 80px;
+		}
+		.menu-toggle {
+			display: block;
+		}
+		.menu-hamburger {
+			position: relative;
+			margin: 10px 0;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			&,
+			&:before,
+			&:after {
+				display: block;
+				width: 40px;
+				height: 3px;
+				background-color: #fff;
+				transition: all 300ms;
+				transition-delay: 450ms;
+			}
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				z-index: -1;
+				transform: rotate(0deg);
+				transform: translateY(0);
+			}
+			&:before {
+				transform: translateY(-9px);
+			}
+			&:after {
+				transform: translateY(9px);
+			}
+		}
+		.cm-logo-icon {
+			float: inherit;
+			font-size: 26px;
+			padding: 0;
+		}
+
+		// _mobile-transitions class is applied dynamically with delay so there is no flash of content when viewport switches from desktop to mobile
+		$cubicBezier: cubic-bezier(0.4,0,0.2,1);
+
+		&._mobile-transitions {
+			.top-bar,
+			.main-nav-inner,
+			.sub-nav {
+				transition: transform 350ms $cubicBezier;
+			}
+			.main-nav-section {
+				transition: box-shadow 250ms linear, transform 350ms $cubicBezier;
+			}
+		}
+		.main-nav-section,
+		.sub-nav {
+			display: none; // for tab accessibilty, js will apply _display-block class to override
+		}
+		.main-nav-section {
+			box-shadow: 3px 0 5px rgba(0,0,0,0); // need to fade this out
+			height: 100%;
+			overflow-x: hidden;
+			padding: 0;
+			position: absolute;
+			top: 0;
+			transform: translateX(-100%);
+			width: $menu-width;
+			z-index: $mainNavZIndex;
+
+			&._sub-nav-open {
+				-webkit-overflow-scrolling: touch;
+
+				.main-nav-inner {
+					transform: translateX(-100%);
+				}
+			}
+			&._display-block {
+				display: block;
+			}
+			.cm-logo-icon{
+				display: block;
+			}
+			.cm-logo-icon {
+				color: $dark-blue-logo;
+				line-height: 80px;
+				padding-left: $menu-left-padding;
+				text-align: left;
+
+				&:before { // for vertical alignment
+					top: 0.2em;
+					position: relative;
+				}
+			}
+		}
+		.top-bar {
+			transform: translateX(0);
+			.location-signin {
+				display: none;
+			}
+		}
+		&._menu-open {
+			.top-bar {
+				transform: translateX($menu-width);
+
+				.cm-logo-icon {
+					opacity: 0;
+				}
+			}
+			.main-nav-section {
+				transform: translateX(0);
+				box-shadow: 3px 0 5px rgba(0,0,0,0.4);
+			}
+			.menu-hamburger {
+				background-color: transparent;
+
+				&:before,
+				&:after {
+					top: 0;
+					width: 30px;
+				}
+
+				$rotateDeg: -42deg;
+
+				&:before {
+					transform: rotate(-1 * $rotateDeg);
+				}
+				&:after {
+					transform: rotate($rotateDeg);
+				}
+			}
+		}
+		.main-nav-inner {
+			transform: translateX(0);
+			position: relative;
+		}
+		.main-nav {
+			padding: 0;
+		}
+		.nav-item {
+			float: inherit;
+			border-bottom: 1px solid $grey-border-nav;
+			padding: 0;
+
+			&._sub-nav-active {
+				.sub-nav {
+					transform: translateX(100%);
+				}
+			}
+			&._display-block {
+				.sub-nav {
+					display: block;
+				}
+			} 
+
+			> a {
+				//@include icon(arrow-right);
+				font-size: 24px;
+				letter-spacing: 0.1em;
+				font-weight:200;
+				position: relative;
+				padding-left: $menu-left-padding;
+				padding-right: $menu-left-padding;
+
+				&:before {
+					color: $black-type;
+					font-size: 14px;
+					position: absolute;
+					right: $menu-left-padding;
+					top: 1px;
+					visibility: inherit;
+					opacity: inherit;
+					left: inherit;
+					border: 0;
+				}
+
+			}
+
+			&._hover-open {
+				.sub-nav,
+				&> a:before {
+					display: none;
+				}
+			}
+		}
+		.sub-nav {
+			transform: translateX(200%);
+			top: -10px;
+			padding: 0 !important;
+			border-top: 0;
+			box-shadow: none;
+
+			// for careers subnav
+			right: inherit !important;
+			left: inherit !important;
+			width: 100% !important;
+			max-width: inherit !important;
+
+			//works in conjuction with js to set max-height so mobile nav only has vertical scroll if current
+			overflow: hidden;
+
+			&.about-us {
+				.column-header {
+					border-bottom: none;
+					padding-bottom: 0;
+				}
+			}
+
+			.column {
+				width: 100% !important; // important for about-us subnav
+				border: none !important; // for about-us subnav right-border
+				padding: 0 !important; // remove any column padding
+				float: inherit;
+				&:first-child { //first-column's header should have less padding
+					.column-header {
+						padding-top: 50px;
+					}
+				}
+			}
+		}
+		.sub-nav-header {
+			overflow: hidden;
+		}
+		.sub-nav-title {
+			float: left;
+			padding: 0 28px;
+			position: relative;
+			top: 40px;
+			transform: translateY(-50%);
+			width: 76%;
+		}
+		.close-sub-nav {
+			//@include icon(arrow-left-thin);
+			background-color: #eee;
+			float: left;
+			height: 79px;
+			max-width: 80px;
+			position: relative;
+			width: 24%;
+
+			&:before {
+				font-size: 23px;
+				left: 50%;
+				margin-left: -8px;
+				position: absolute;
+				top: 36%;
+			}
+		}
+
+		.nav-group-left{
+			float: inherit;
+		}
+	}
+}
+
+@media screen and (max-width: 420px) { // so items in top bar still fit
+	.global-header {
+		.cm-logo-icon {
+			font-size: 20px;
+			transform: translateY(0);
+		}
+
+	}
+}

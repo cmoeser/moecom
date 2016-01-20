@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<thumbnails>
+  <thumbImg>
+     <imgLocation>images/CH0001_FL.jpg</imgLocation>
+     <thumbLocation>thumbnails/CH0001.jpg</thumbLocation>
+	 <imgTitle><![CDATA[<span class='imageTitle'>&quot;Heidi Sitting&quot;</span>]]></imgTitle>
+	 <imgMedium>Charcoal on newsprint</imgMedium>
+	 <imgDate>1998</imgDate>
+	 <imgDimensions>18" x 24"</imgDimensions>
+	 <imgAvail>Not Available</imgAvail>
+  </thumbImg>
+   <thumbImg>
+     <imgLocation>images/CH0002_FL.jpg</imgLocation>
+     <thumbLocation>thumbnails/CH0002.jpg</thumbLocation>  
+	 <imgTitle>Untitled</imgTitle>
+	 <imgMedium>Charcoal on newsprint</imgMedium>
+	 <imgDate>1998</imgDate>
+	 <imgDimensions>18" x 24"</imgDimensions>
+	 <imgAvail>Available</imgAvail>
+  </thumbImg> 
+   <thumbImg>
+     <imgLocation>images/CH0008_FL.jpg</imgLocation>
+     <thumbLocation>thumbnails/CH0008.jpg</thumbLocation>     
+	 <imgTitle>Untitled</imgTitle>
+	 <imgMedium>Charcoal and Conte crayon on newsprint</imgMedium>
+	 <imgDate>1999</imgDate>
+	 <imgDimensions>18" x 24"</imgDimensions>
+	 <imgAvail>Not Available</imgAvail>
+  </thumbImg> 
+   <thumbImg>
+     <imgLocation>images/CH0003_FL.jpg</imgLocation>
+     <thumbLocation>thumbnails/CH0003.jpg</thumbLocation>    
+	 <imgTitle>Untitled</imgTitle>
+	 <imgMedium>Charcoal on newsprint</imgMedium>
+	 <imgDate>2000</imgDate>
+	 <imgDimensions>18" x 24"</imgDimensions>
+	 <imgAvail>Not Available</imgAvail>
+  </thumbImg>   
+   <thumbImg>
+     <imgLocation>images/CH0005_FL.jpg</imgLocation>
+     <thumbLocation>thumbnails/CH0005.jpg</thumbLocation>    
+	 <imgTitle><![CDATA[Study for <span class='imageTitle'>&quot;Sherri&quot;</span>]]></imgTitle>
+	 <imgMedium>Acrylic on Canvas</imgMedium>
+	 <imgDate>2004</imgDate>
+	 <imgDimensions>18" x 24"</imgDimensions>
+	 <imgAvail>Not Available</imgAvail>
+  </thumbImg> 
+</thumbnails>
+	 
+	 

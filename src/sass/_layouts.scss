@@ -1,0 +1,22 @@
+.infographic > img,
+.exhibit img,
+.-span-right img {
+    width: 100%;
+}
+
+.-span-right {
+   width: get-span(9 of 7);
+
+   
+}
+
+@include media($small) {
+    .-span-right {
+        width: get-span(9 of 9);
+
+        .metadata,
+        .description {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@function em($size, $base:16) {
+   @if( unitless($size) ) {
+         $ems: ( $size / $base )*1em;
+    }
+    
+   @else if ( unit($size) == 'em' ) {
+        $ems: ( $size / ($base*1em) )*1em;
+   }
+   @else {
+       $ems: ( $size / ($base*1px) )*1em;
+   }
+   @return $ems;
+}
+
+@function tracking($amount) {
+   @return ($amount / 1000)*1em;
+}
+
+@mixin tracking($amount) {
+    letter-spacing: tracking($amount);
+}
+
+
+
+// Note: these are helpers that use Neat's built-in math, but allow for finer control over the code that's output.
+// They don't fully replace @span-columns() by design - just make sure whatever you're using them with
+// has appropriate floats and margins set (preferably on a generic level - use the cascade!)
+
+// get-span: returns the same width you'd get back from @include span-columns(x of y), as a standalone value
+// all the same logic, syntax, and rules from that mixin apply here
+
+// usage:
+// .one-third { width: get-span(3 of 9); }
+@function get-span($span: $columns of $container-columns, $display: block) {
+  $columns: nth($span, 1);
+  $container-columns: container-span($span);
+  $parent-columns: get-parent-columns($container-columns) !global;
+  $direction: get-direction($layout-direction, $default-layout-direction);
+  $opposite-direction: get-opposite-direction($direction);
+  $display-table: is-display-table($container-display-table, $display);
+
+  @if $display-table  {
+    @return percentage($columns / $container-columns);
+  } @else {
+    @if $display == collapse or $display == block-collapse {
+     @return flex-grid($columns, $container-columns) + flex-gutter($container-columns);
+   } @else {
+      @return flex-grid($columns, $container-columns);
+    }
+  }
+}
+
+// get-gutter: returns the (percentage-based) width of one gutter with the given grid settings
+// note the simplified syntax - you only need to pass in the total number of columns at your current context
+
+// usage:
+// .item { width: get-span(11, 14); margin-right: get-gutter(14); }
+// .nested-item { width: get-span(6 of 9); margin-right: get-gutter(9); }
+@function get-gutter($container-columns) {
+  $columns: 1;
+  //$container-columns: container-span($span);
+  $parent-columns: get-parent-columns($container-columns) !global;
+  @return flex-gutter($container-columns);
+}

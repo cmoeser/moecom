@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'cm-icons';
+    src: url(data:font/truetype;charset=utf-8;base64,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) format('truetype');  
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="cm-"]:before, [class*=" cm-"]:before {
+	font-family: 'cm-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+// Please update this map if you add new icons - add the class and content value after the existing ones
+// NEW: Icon styles are happening dynamically! No need to update two things -
+// just add the unicode point and class name (minus the "cm-" and "-icon") of any new icons
+// to this map, and the styles will automatically be created for it.
+// This gives us some flexibility and means we can do things like reorder,
+// rename, or dynamically access any icon as needed. Plus it's easy to read.
+
+@function unicode($str){
+    @return unquote("\"") + $str + unquote("\"");
+}
+
+$icons: (
+	email: \e601,
+	download: \e603,
+	arrow-right: \e606,
+	arrow-left: \e607,
+	pinterest: \e606,
+	tumblr: \e604,
+	googlePlus: \e601,
+	twitter: \e603,
+	facebook: \e602,
+);
+
+// This loop generates css classes:
+// Just keep the map current please!
+
+@each $name, $content in $icons {
+	.cm-#{$name}-icon:before {
+		content: quote(unicode($content));
+	}
+}
+
+// @function get-icon --- returns the unicode point mapped to the given icon name/class, from the $icons map ^
+// which might be useful since you can't do @extend .cm-whatever-icon inside a media query
+// future goal: expand this into a fully dynamic mixin that can replace icomoon's generated style rules
+// Usage:
+// .special-icon-situation:after { font-family: 'cm-icons'; content: get-icon(arrow-down); }
+
+@function get-icon($name) {
+	@if map-has-key($icons, $name) {
+    	$icon-code: map_get($icons, $name);
+    	@return quote(unicode($icon-code));
+    }
+    @else {
+		@warn "No icon stored under that name - make sure to update the $icons map in icons.scss whenever you add a new icon! \a
+	Current icons: \a
+	#{map_keys($icons)} \a
+	";
+	}
+}
+// A shorter way of doing the same - use this if you don't want to explicitly
+// give your element a "cm-whatever-icon" class in the markup
+
+@mixin icon($name) {
+	&:before {
+		font-family: 'cm-icons';
+		content: get-icon($name);
+	}
+}
+
+

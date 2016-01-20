@@ -1,0 +1,244 @@
+App.progressCountTotal = 30;
+App.progressCountCurrent = 0;
+fw.dismissBatchDialogWhenDone = true;
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0002_FL.jpg');
+App.progressCountCurrent = 1;
+App.batchStatusString = 'AC0002_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0002_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0002_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0002_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0002_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0002_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0002_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0007_FL.jpg');
+App.progressCountCurrent = 2;
+App.batchStatusString = 'AC0007_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0007_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0007_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0007_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0007_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0007_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0007_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0008_FL.jpg');
+App.progressCountCurrent = 3;
+App.batchStatusString = 'AC0008_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0008_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0008_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0008_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0008_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0008_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0008_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0009_FL.jpg');
+App.progressCountCurrent = 4;
+App.batchStatusString = 'AC0009_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0009_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0009_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0009_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0009_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0009_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0009_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0010_FL.jpg');
+App.progressCountCurrent = 5;
+App.batchStatusString = 'AC0010_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0010_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0010_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0010_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0010_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0010_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0010_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0012_FL.jpg');
+App.progressCountCurrent = 6;
+App.batchStatusString = 'AC0012_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0012_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0012_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0012_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0012_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0012_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0012_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0013_FL.jpg');
+App.progressCountCurrent = 7;
+App.batchStatusString = 'AC0013_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0013_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0013_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0013_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0013_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0013_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0013_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0013a_FL.jpg');
+App.progressCountCurrent = 8;
+App.batchStatusString = 'AC0013a_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0013a_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0013a_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0013a_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0013a_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0013a_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0013a_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0014_FL.jpg');
+App.progressCountCurrent = 9;
+App.batchStatusString = 'AC0014_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0014_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0014_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0014_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0014_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0014_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0014_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0017_FL.jpg');
+App.progressCountCurrent = 10;
+App.batchStatusString = 'AC0017_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0017_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0017_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0017_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0017_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0017_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0017_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0018_FL.jpg');
+App.progressCountCurrent = 11;
+App.batchStatusString = 'AC0018_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0018_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0018_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0018_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0018_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0018_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0018_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0019_FL.jpg');
+App.progressCountCurrent = 12;
+App.batchStatusString = 'AC0019_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0019_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0019_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0019_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0019_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0019_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0019_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0021_FL.jpg');
+App.progressCountCurrent = 13;
+App.batchStatusString = 'AC0021_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0021_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0021_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0021_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0021_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0021_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0021_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0022_FL.jpg');
+App.progressCountCurrent = 14;
+App.batchStatusString = 'AC0022_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0022_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0022_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0022_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0022_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0022_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0022_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0025_FL.jpg');
+App.progressCountCurrent = 15;
+App.batchStatusString = 'AC0025_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0025_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0025_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0025_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0025_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0025_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0025_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0026_FL.jpg');
+App.progressCountCurrent = 16;
+App.batchStatusString = 'AC0026_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0026_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0026_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0026_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0026_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0026_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0026_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0027_FL.jpg');
+App.progressCountCurrent = 17;
+App.batchStatusString = 'AC0027_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0027_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0027_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0027_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0027_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0027_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0027_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0028_FL.jpg');
+App.progressCountCurrent = 18;
+App.batchStatusString = 'AC0028_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0028_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0028_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0028_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0028_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0028_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0028_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0029_FL.jpg');
+App.progressCountCurrent = 19;
+App.batchStatusString = 'AC0029_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0029_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0029_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0029_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0029_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0029_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0029_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0024_FL.jpg');
+App.progressCountCurrent = 20;
+App.batchStatusString = 'AC0024_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0024_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0024_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0024_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0024_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0024_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0024_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0030_FL.jpg');
+App.progressCountCurrent = 21;
+App.batchStatusString = 'AC0030_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0030_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0030_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0030_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0030_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0030_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0030_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0023_FL.jpg');
+App.progressCountCurrent = 22;
+App.batchStatusString = 'AC0023_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0023_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0023_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0023_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0023_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0023_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0023_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0020_FL1.jpg');
+App.progressCountCurrent = 23;
+App.batchStatusString = 'AC0020_FL1.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0020_FL1_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0020_FL1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0020_FL1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0020_FL1_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0020_FL1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0020_FL1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0001_FL1.jpg');
+App.progressCountCurrent = 24;
+App.batchStatusString = 'AC0001_FL1.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0001_FL1_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0001_FL1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0001_FL1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0001_FL1_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0001_FL1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0001_FL1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC_bg.jpg');
+App.progressCountCurrent = 25;
+App.batchStatusString = 'AC_bg.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC_bg_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC_bg_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC_bg_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC_bg_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC_bg_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC_bg_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0031_FL.jpg');
+App.progressCountCurrent = 26;
+App.batchStatusString = 'AC0031_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0031_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0031_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0031_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0031_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0031_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0031_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0032_FL.jpg');
+App.progressCountCurrent = 27;
+App.batchStatusString = 'AC0032_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0032_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0032_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0032_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0032_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0032_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0032_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0034_FL.jpg');
+App.progressCountCurrent = 28;
+App.batchStatusString = 'AC0034_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0034_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0034_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0034_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0034_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0034_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0034_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0033_FL.jpg');
+App.progressCountCurrent = 29;
+App.batchStatusString = 'AC0033_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0033_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0033_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0033_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0033_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0033_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0033_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0035_FL.jpg');
+App.progressCountCurrent = 30;
+App.batchStatusString = 'AC0035_FL.jpg';
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0035_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0035_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/images/AC0035_FL_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0035_FL_jpg.jpg') || confirm('file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0035_FL_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///D|/Projects/ChipMoeser.com/FA_WB_000017_Redesign1/Web/Painting/thumbnails/AC0035_FL_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+'done';

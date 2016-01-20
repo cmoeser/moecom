@@ -1,0 +1,16 @@
+[02-Jan-2010 22:34:02] PHP Fatal error:  Call to undefined function  __() in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 26
+[24-Jan-2011 08:33:11] PHP Fatal error:  Call to undefined function  __() in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 26
+[25-Jan-2011 08:56:35] PHP Fatal error:  Call to undefined function  __() in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 26
+[25-Jan-2011 15:03:26] PHP Fatal error:  Call to undefined function  __() in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 26
+[27-Jan-2011 04:34:36] PHP Fatal error:  Call to undefined function  __() in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 26
+[31-Jan-2011 05:32:29] PHP Fatal error:  Call to undefined function  __() in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 26
+[03-Feb-2011 06:37:17] PHP Fatal error:  Call to undefined function  __() in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 26
+[06-Aug-2011 16:43:39] PHP Fatal error:  Call to undefined function  __() in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 26
+[23-Feb-2012 19:45:33] PHP Warning:  require(ABSPATHWPINC/class-wp-editor.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 8
+[23-Feb-2012 19:45:33] PHP Warning:  require(ABSPATHWPINC/class-wp-editor.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 8
+[23-Feb-2012 19:45:33] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHWPINC/class-wp-editor.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 8
+[27-Mar-2012 18:33:16] PHP Warning:  require(ABSPATHWPINC/class-wp-editor.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 8
+[27-Mar-2012 18:33:16] PHP Warning:  require(ABSPATHWPINC/class-wp-editor.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 8
+[27-Mar-2012 18:33:16] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHWPINC/class-wp-editor.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/chipmo2/public_html/Blog/wp-includes/js/tinymce/langs/wp-langs.php on line 8
+[04-Feb-2014 20:05:30 America/Los_Angeles] PHP Warning:  Module 'timezonedb' already loaded in Unknown on line 0
+[11-Mar-2014 11:12:25 America/Los_Angeles] PHP Warning:  Module 'timezonedb' already loaded in Unknown on line 0

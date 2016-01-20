@@ -1,0 +1,281 @@
+$fonts: (
+   eyebrow: "'Helvetica Neue', Helvetica, Arial, sans-serif",
+   copy:  "'jaf-bernino-sans', sans-serif",
+   headline: "'jaf-bernino-sans', sans-serif",
+   box-title:  "'Whitney SSm A', 'Whitney SSm B', 'Trebuchet MS', sans-serif",
+   icon: "mck-icons"
+); 
+
+// @mixin font
+// Get the font-stack for a given type style, based on use case.
+// if you pass in an invalid font stack key, you'll get a warning about it in your terminal.
+// usage:
+// .thing { @include font(copy); }
+// ==>> .thing { font-family:  "'Chronicle SSm A', 'Chronicle SSm B', 'Chronicle Text G1', 'ChronicleTextG1Roman', serif"; }
+@mixin font($name) {
+    $all-fonts: map-keys($fonts);
+    @if( map-has-key($fonts, $name) ) {
+        font-family: unquote(map-get( $fonts, $name));
+    }
+    @else {
+        @warn "#{$name} is not mapped to a font. Try one of these: #{$all-fonts}"
+    }
+};
+
+// smart defaults
+ h1, h2, h3, h4, h5, p, .description {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+h1{
+  color: $blue-grey;
+}
+ h2, h3, h4, h5{
+    color: $grey-type;
+}
+p, .description {
+ color: $black-type;
+ }
+
+
+p { 
+    hyphens: auto; 
+}
+
+blockquote :first-child:before,
+blockquote :last-child:after {
+    display: inline;
+    clear: none;
+}
+
+blockquote > p:first-child:before {
+    content: "\201c";
+}
+
+blockquote > p:last-child:after {
+    content: "\201d";
+} 
+
+// Generate some utility classes for consistent sizing
+// These should be applied on the component level, not on the individual elements
+// Type styles correspond to how wide the component is, relative to the page:
+
+// 75% +   : text-xl
+// 50-75%  : text-l
+// 33%-50% : text-m
+// <33%    : text-s
+
+// special cases:
+// heroes  : text-hero
+// articles: text-longform
+
+// as a general pattern, use ".headline" for headings (any level) within a text-* block (and use paragraphs for copy)
+// if you need multiple heading sizes in one text-* block, consider definining a "sub-headline" style for reusability
+// avoid adding new classes/creating new, specific styles as much as possible -
+// smart defaults should cover most of our typography needs.
+
+$sizes: xl, l, m, s, hero-l, hero-m, hero-s;
+
+@each $size in $sizes {
+    .text-#{$size} {
+        .headline {
+            @include type-set($headings, $size);
+        }
+        p,
+        .description {
+            @include type-set($copy, $size);
+        }
+    }
+};
+
+
+.headline + p,
+.headline + .description,
+.item-title-link + .description  {
+    margin-top: 1em;
+}
+
+.text-xl .headline + p,
+.text-xl p + .cta,
+.text-hero-l p + .cta {
+    margin-top: $headline-p-cta-spacing; // 20px
+}
+
+
+// smart defaults
+p,
+.description {
+    clear: left;
+    margin-top: $s-paragraph-space;
+    letter-spacing: tracking(-20);
+}
+
+.description > p:first-child { // we can't guarantee that there will be a p tag or not so we'll override margin top if there is
+    margin-top: 0;
+}
+
+
+.headline,
+.rail-article-title {
+    @include font(headline);
+    letter-spacing: tracking(-20);
+}
+
+.main-copy {
+    // TODO: maybe clean this up to use the type-set code like the other sizes?
+    font-size: nth($article, 1)*1px;
+    line-height: (nth($article, 2)/ nth($article, 1));
+    color: $black-type;
+
+    a {
+        font-size: nth($linkSize, 1)*1px;
+    }
+
+    p + p {
+        margin-top: $longform-paragraph-spacing;
+    }
+    
+    // Prevent double-spacing between figures ("exhibits") and paragraphs
+    figure + p {
+        margin-top: 0;
+    }
+
+    // TODO: can this be abstracted/relative-ized?
+    h3,
+    .headline,
+    .subheadline {
+        //margin-top: 75px;
+        font-family: inherit;
+        letter-spacing: 0;
+    }
+    h1 {
+        font-size: em(28, nth($article, 1));
+        font-weight:bold;
+        margin-bottom: em(20, 22);
+    }
+
+    h2 {
+        font-size: em(24, nth($article, 1));
+    }
+
+   h3 {
+        font-size: em(20, nth($article, 1));
+    }
+
+    h4, h5, h6 {
+        font-size: em(20, nth($article, 1));
+        margin-top: em(10, 22);
+    }
+
+    h4 {
+        font-style: italic;
+    }
+ 
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-bottom: 0;
+        + * {
+        margin-top: em(30, 22);
+        }
+    }
+    p + *{ 
+        margin-top: em(50, 22);
+    }
+
+    .eyebrow + * {
+        margin-top: 0;
+    }
+}
+
+.eyebrow {
+    display: block;
+    color: $grey-eyebrow;
+    @include font(eyebrow);
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+$eyebrow-padding: 3px;
+
+.eyebrow {
+    font-weight: 600;
+    padding-bottom: $eyebrow-padding; // visually 7px, but accounting for line-heights
+}
+
+
+// Lighter gray paragraphs - TODO: pick one class, drop the other, unless there's a good reason for both
+// maybe even drop the "paragraph" part of the name, as it's superfluous
+.paragraph-alt,
+.paragraph-light {
+    color: $grey-type;
+}
+
+
+.cta,
+.link-list a {
+    font-size: 18px;
+}
+
+em,
+i,
+time,
+.paragraph-alt {
+    font-style: italic;
+}
+
+.short-description {
+    @include type-set($copy, 'l');
+}
+
+.dropdown-label {
+    @include font(eyebrow);
+    font-size: 12px;
+}
+
+.block-list {
+    margin: 0;
+}
+ 
+.block-list,
+.block-list > li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: block;
+}
+.links-list, .exhibit-list,
+.links-list li, .exhibit-list li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.exhibit-list li {
+    font-weight:bold;
+    ul li:last-child {
+            margin-bottom: em(20, 32);
+    }
+    li{
+        font-weight:normal;
+        font-size: em(18, nth($article, 1));        
+    }
+    li + li {
+        font-size: em(16, nth($article, 1)); 
+    }
+}
+
+%sub-header {
+    @include font(box-title);
+    text-transform: uppercase;
+    letter-spacing: tracking(79);
+    font-weight: 600;
+}
+@include media($small) {
+     h2, h3 {
+        font-size: em(32, nth($article, 1));
+        margin-top: em(10, 32);
+    }
+
+} 

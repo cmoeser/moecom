@@ -1,0 +1,94 @@
+.blog {
+	.leftColumn {
+       @include span-columns(3 of 12);
+	   @include shift(1);
+   }
+   .blogBody{
+       @include span-columns(8 of 12);
+   }
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper object,
+.videoWrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.navigation {
+	margin-bottom: 1em;
+}
+.blogNav ul{
+	list-style-type: none;
+	padding-left: 0;
+	margin:0;
+	ul{
+		padding-left: .5em;
+	}
+}
+h2{
+	font-size: 1.4em;
+	&.widgettitle{
+		font-size: 1.2em;
+	}
+}
+h3{
+	  text-align: center;
+}
+.widget {	
+	padding-bottom: .5em;
+	ul{
+		padding-top: .5em;
+	}
+}
+.post {
+	margin-bottom:2em;
+	
+}
+.entry {
+	p img{
+		float: left;
+		padding: 0 1em 1em 0;
+	}
+}
+@include media($medium){
+	.blog{
+		.leftColumn {
+		   @include span-columns(3 of 12);
+			@include shift(0);
+			margin-right: 0;
+	   }
+	   .blogBody{
+		   @include span-columns(8 of 12);
+		   @include shift(1);
+	   }
+	}
+	.blogNav ul {
+		padding-left: 1.5em;
+	}
+}
+
+@include media($small){
+	.blog{
+	  h3{
+		  font-size: 1.2em;
+		  font-weight: bold;
+	  text-align: left;
+      }
+		
+		.leftColumn {
+		   display: none;
+	   }
+	   .blogBody{
+		   @include span-columns(12 of 12);
+		   @include shift(0);
+	   }
+   }
+}

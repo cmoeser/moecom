@@ -1,0 +1,132 @@
+/* line 4, neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 11, neat/grid/_box-sizing.scss */
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+/* line 2, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+.blog .leftColumn {
+  float: left;
+  display: block;
+  margin-right: 3.61%;
+  width: 22.29%;
+  margin-left: 8.63%; }
+  /* line 89, neat/grid/_span-columns.scss */
+  .blog .leftColumn:last-child {
+    margin-right: 0; }
+
+/* line 6, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+.blog .blogBody {
+  float: left;
+  display: block;
+  margin-right: 3.61%;
+  width: 65.46%; }
+  /* line 89, neat/grid/_span-columns.scss */
+  .blog .blogBody:last-child {
+    margin-right: 0; }
+
+/* line 11, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+
+/* line 18, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+.videoWrapper object,
+.videoWrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 25, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+.navigation {
+  margin-bottom: 1em; }
+
+/* line 28, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+.blogNav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0; }
+  /* line 32, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+  .blogNav ul ul {
+    padding-left: .5em; }
+
+/* line 36, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+h2 {
+  font-size: 1.4em; }
+  /* line 38, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+  h2.widgettitle {
+    font-size: 1.2em; }
+
+/* line 42, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+h3 {
+  text-align: center; }
+
+/* line 45, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+.widget {
+  padding-bottom: .5em; }
+  /* line 47, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+  .widget ul {
+    padding-top: .5em; }
+
+/* line 51, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+.post {
+  margin-bottom: 2em; }
+
+/* line 56, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+.entry p img {
+  float: left;
+  padding: 0 1em 1em 0; }
+
+@media screen and (max-width: 1180px) {
+  /* line 63, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+  .blog .leftColumn {
+    float: left;
+    display: block;
+    margin-right: 3.61%;
+    width: 22.29%;
+    margin-left: 0%;
+    margin-right: 0; }
+    /* line 89, neat/grid/_span-columns.scss */
+    .blog .leftColumn:last-child {
+      margin-right: 0; }
+  /* line 68, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+  .blog .blogBody {
+    float: left;
+    display: block;
+    margin-right: 3.61%;
+    width: 65.46%;
+    margin-left: 8.63%; }
+    /* line 89, neat/grid/_span-columns.scss */
+    .blog .blogBody:last-child {
+      margin-right: 0; }
+  /* line 73, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+  .blogNav ul {
+    padding-left: 1.5em; } }
+
+@media screen and (max-width: 768px) {
+  /* line 80, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+  .blog h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left; }
+  /* line 86, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+  .blog .leftColumn {
+    display: none; }
+  /* line 89, C:/Users/Chip/Desktop/moecom/src/blog_sass/modules/_blog.scss */
+  .blog .blogBody {
+    float: left;
+    display: block;
+    margin-right: 3.61%;
+    width: 100%;
+    margin-left: 0%; }
+    /* line 89, neat/grid/_span-columns.scss */
+    .blog .blogBody:last-child {
+      margin-right: 0; } }

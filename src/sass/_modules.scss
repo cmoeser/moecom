@@ -1,0 +1,11 @@
+@import "modules/_body";
+@import "modules/_hero";
+@import "modules/_global-footer";
+@import "modules/_global-header";
+@import "modules/_global-nav";
+
+.module {
+	@include fill-parent();
+	@include row();
+	position: relative;
+}
